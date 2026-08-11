@@ -1,5 +1,4 @@
 {
-    "##": "HASH IS A PLACEHOLDER and will fail installation until it is filled in. It cannot be known before the v26.8.11 release exists. Once it is published, run: .\\bin\\checkhashes.ps1 tinyxnb -Update",
     "version": "26.8.11",
     "description": "Explorer thumbnails and a 'Save as PNG' context-menu verb for XNA/MonoGame .xnb texture files",
     "homepage": "https://github.com/regulad/tinyxnb",
@@ -24,7 +23,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/regulad/tinyxnb/releases/download/v26.8.11/tinyxnb-26.8.11-win-x64.zip",
-            "hash": "0000000000000000000000000000000000000000000000000000000000000000"
+            "hash": "6f4335769eaeae98844b0befb34adf2f19eafec9b7a725cb2210cc617f4bb2a4"
         }
     },
     "pre_install": [
