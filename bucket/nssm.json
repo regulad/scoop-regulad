@@ -1,0 +1,41 @@
+{
+    "version": "2.24-103",
+    "description": "The Non-Sucking Service Manager (upstream's 2.24-103-gdee49fc source, rebuilt with VC++ 2008 SP1, the toolchain upstream used)",
+    "homepage": "https://github.com/regulad/nssm",
+    "license": "Public Domain",
+    "url": "https://github.com/regulad/nssm/releases/download/nssm-2.24-103-gdee49fc/nssm-2.24-103-gdee49fc.zip",
+    "hash": "74da5365b6fcd1f24cef949c4b0f2f118d024f5844df7d1992a93fde9eed68c4",
+    "architecture": {
+        "64bit": {
+            "extract_dir": "nssm-2.24-103-gdee49fc\\win64"
+        },
+        "32bit": {
+            "extract_dir": "nssm-2.24-103-gdee49fc\\win32"
+        }
+    },
+    "bin": [
+        "nssm.exe",
+        [
+            "nssm.exe",
+            "service"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/regulad/nssm",
+        "regex": "/releases/tag/nssm-([\\d.]+-\\d+)-(?<build>g[0-9a-f]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/regulad/nssm/releases/download/nssm-$version-$matchBuild/nssm-$version-$matchBuild.zip",
+        "hash": {
+            "url": "$url.sha256"
+        },
+        "architecture": {
+            "64bit": {
+                "extract_dir": "nssm-$version-$matchBuild\\win64"
+            },
+            "32bit": {
+                "extract_dir": "nssm-$version-$matchBuild\\win32"
+            }
+        }
+    }
+}
