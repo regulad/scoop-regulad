@@ -13,3 +13,12 @@ repository:
   # Topics: comma-and-space separated string, NOT a YAML list.
   topics: scoop, scoop-bucket, windows, powershell, package-manager
   default_branch: master
+
+# Labels this repository adds to the shared ones. `color` is a hex string
+# without the leading `#`.
+labels:
+  # The package-request issue form (.github/ISSUE_TEMPLATE/package-request.yml)
+  # applies it.
+  - name: package-request
+    color: "0e8a16"
+    description: A request to add a package to the bucket
