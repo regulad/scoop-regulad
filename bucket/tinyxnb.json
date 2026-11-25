@@ -18,7 +18,9 @@
         "The bundled xnb2png.exe is self-contained and needs no runtime at all.",
         "",
         "Only .xnb files whose root object is a Texture2D get a thumbnail. Anything else falls",
-        "back to the generic icon."
+        "back to the generic icon.",
+        "",
+        "tinyxnb sends crash reports and anonymous usage counts (one per thumbnail and per xnb2png run, never your files or anything identifying you) to Sentry by default. Set DO_NOT_TRACK=1 to turn them off. Details: https://github.com/regulad/tinyxnb/blob/main/PRIVACY.md"
     ],
     "architecture": {
         "64bit": {
