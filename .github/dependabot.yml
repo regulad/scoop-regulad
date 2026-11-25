@@ -1,0 +1,22 @@
+# Dependabot keeps the GitHub Actions the workflows use current, Excavator's ScoopInstaller/GithubActions among them.
+# The bucket's manifests aren't its business: Excavator updates them from each app's own releases.
+#
+# Minor and patch updates come in one PR a week, and each major as a PR of its own. Each waits for Parker to merge it:
+# nothing here merges on its own.
+#
+# The cooldown holds each release back until it is two weeks old, so nothing ships while it's days old.
+version: 2
+
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "05:00"
+      timezone: "America/New_York"
+    cooldown:
+      default-days: 14
+    groups:
+      actions:
+        update-types: ["minor", "patch"]
