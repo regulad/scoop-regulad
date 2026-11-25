@@ -22,7 +22,7 @@
     ],
     "checkver": {
         "github": "https://github.com/regulad/nssm",
-        "regex": "/releases/tag/nssm-([\\d.]+-\\d+)-(?<build>g[0-9a-f]+)"
+        "regex": "nssm-([\\d.]+-\\d+)-(?<build>g[0-9a-f]+)"
     },
     "autoupdate": {
         "url": "https://github.com/regulad/nssm/releases/download/nssm-$version-$matchBuild/nssm-$version-$matchBuild.zip",
